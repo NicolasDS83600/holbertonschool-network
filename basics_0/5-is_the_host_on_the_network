@@ -6,3 +6,5 @@ if [ -z "$1" ]; then
 fi
 
 ping -c 5 "$1"
+
+# This script checks whether a host is reachable on the network by sending 5 ping requests to the provided IP address.
