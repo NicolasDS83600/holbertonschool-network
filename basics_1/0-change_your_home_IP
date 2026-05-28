@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Backs up /etc/hosts, removes existing localhost and facebook.com entries, then adds new custom mappings.
 sudo cp /etc/hosts /etc/hosts.bak
 
 sudo sed -i '/localhost/d' /etc/hosts
