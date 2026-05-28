@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# Displays all local IP addresses, one per line.
-hostname -I
+# Displays all local ipv4 addresses
+ifconfig | grep "inet " | cut -d " " -f 10
